@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            margin: 20px auto;
+            width:fit-content;
+            height: fit-content;
+            background-image: linear-gradient(
+                rgb(200, 157, 115) 150px,
+                rgb(78, 59, 41) 660px);
+                box-shadow: 6px 2px 25px rgb(110, 62, 37);
+                border: 2px solid rgb(43, 34, 25);
+        }   
+        .tbl{padding: 0px 50px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 39px;
+            font-family: Californian FB;
+            font-weight: 900;
+            padding: 15px;
+        }
+        th {
+            font-size: 15px;
+            font-family: Lucida Bright;
+            text-align: right;
+            padding: 5px;
+            font-weight: 400;
+            color: rgb(65, 46, 18);
+        }
+        td {
+            padding: 4px;
+            padding-left: 20px;
+        }
+        .inp {
+            height: 29px;
+            width: 290px;
+            border-radius: 5px;
+            border: none;
+        }
+        .inp1 {
+            border-radius: 10px;
+            padding: 6px;
+            font-size: 15px;
+        }
+        input {
+            padding: 2px;
+        }
+        .pass {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(70, 49, 19);
+        }
+        .inp2 {
+            text-align: center;
+        }
+        .np {
+            font-size: medium;
+            font-weight: 400;
+            font-family: Franklin Gothic Book;
+            color: rgb(61, 47, 25);
+        }
+        .btn {
+            padding: 5px;
+        }
+        button {
+            height: 35px;
+            width: 180px;
+            border-radius: 10px;
+            transition: 1s all ease;  
+            color: black;
+            font-family: Lucida Bright;
+            font-size: 15px;
+            
+        }
+        .button {
+            text-align: center;
+        }
+        button:hover {
+            transform: scale(0.5);
+            background-color: rgb(238, 185, 133);
+            color: brown;
+        }
+
+        body {
+            background-image: url(wall_.jpg);
+        }
+        img {                       
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="main">
+            <h1>Registration for job</h1>
+               <div class="tbl"> <table>
+                    <tr>
+                        <th>First Name :</th>
+                        <td>
+                            <input type="text" placeholder="Enter First Name" required class="inp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Middle Name :</th>
+                        <td>
+                            <input type="text" placeholder="Enter Middle Name" required class="inp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Last Name :</th>
+                        <td>
+                            <input type="text" placeholder="Enter Last Name" required class="inp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Address :</th>
+                        <td>
+                        <textarea name="" id="" cols="32" rows="4" placeholder="Enter Address" class="inp1"></textarea>   
+                    </td>
+                    </tr>
+                    <tr>
+                        <th>Date Of Birth :</th>
+                        <td>
+                            <input type="date" placeholder="" required class="inp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Gender :</th>
+                        <td>
+                            <input type="radio" name="pass">
+                            <label for="" class="np">Male</label>
+                            <input type="radio" name="pass">
+                            <label for="" class="np">Female</label>  
+                    </tr>
+                    <tr>
+                        <th>Experiance :</th>
+                        <td>
+                            <select name="" id="" class="inp">
+                                <option value="">---Select---</option>
+                                <option value="">Fresher</option>
+                                <option value="">less one</option>
+                                <option value="">More one</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Mobile No. :</th>
+                        <td>
+                            <input type="text" placeholder="Enter Mobile No" class="inp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email id :</th>
+                        <td>
+                            <input type="email" placeholder="Enter E-mail" class="inp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Enter Password :</th>
+                        <td>
+                            <input type="password" placeholder="Enter Password" class="inp">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="inp2">
+                            <input type="checkbox" name="pass">Show Password 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="button" colspan="2">
+                        <button class="btn">Register</button>
+                        </td>
+                    </tr>
+                </table></div>
+            </div>
+            
+</body>
+</html>

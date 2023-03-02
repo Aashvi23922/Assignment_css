@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100%;
+            background-image: radial-gradient(
+            rgb(103, 196, 196) 10%,
+            rgb(7, 92, 88) 40%,
+            rgb(49, 161, 158) 50%,
+            rgb(2, 49, 49) 65%); 
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        fieldset {
+            height: 250px;
+            width: 440px;
+            margin-top: 15%;
+            box-shadow: -4px 9px 15px rgb(7, 24, 4);
+            border: none;
+        }
+        h1{
+            color: rgb(3, 40, 41);
+            padding: 3%;
+            text-shadow: 2px 0px 1px rgb(159, 169, 170);
+        }
+        h1::after {
+            content:"";
+            height: 3.5px;
+            width: 50px;
+            background-color: rgb(75, 78, 78);
+            display: inline-block;
+            margin: 7px 3px;
+
+        }
+        h1::before {
+            content:"";
+            height: 3.5px;
+            width: 50px;
+            background-color: rgb(75, 78, 78);
+            display: inline-block;
+            margin: 7px 3px;
+        }
+        p {
+            padding-top: 1%;
+        }
+        input[type=email]{
+            width: 70%; 
+            height: 20%;
+        }
+        p {
+            padding-top: 2%;
+        }
+        input[type=password]{
+            width: 70%;
+            height: 20%;
+        }
+        input {
+            padding: 10px;
+        }
+        input:focus-visible {
+            outline: none;
+        }
+        button {
+            height: 30px;
+            width: 100px;
+            font-size: medium;
+            background-color: transparent;
+            border-radius: 5px;
+            margin-top: 20px; 
+            margin-left: 49%;
+            transition: 1s all ease;
+            border: 2px solid rgb(3, 68, 68);
+        }
+        button:hover {
+            background-color: rgb(2, 39, 54);
+            border-radius: 5px;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+        <div class="main">
+            <fieldset>
+            <h1>Login</h1>
+            <p><input type="email" class="" id="" placeholder="Enter Email" required></p>
+            <p><input type="password" class="" placeholder="Enter Password" required></p>
+           <button>Login&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+        </fieldset>
+        </div>
+</body>
+</html>

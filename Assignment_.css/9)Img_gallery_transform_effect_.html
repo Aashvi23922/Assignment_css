@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: black;
+        }
+        .main {
+            padding: 40px 0px;
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            gap: 10px 80px;
+            margin: 0px 50px;
+        }
+        .main .img1 img {
+            height: 250px;
+            width: 400px;
+            transition: 1s all ease;
+            border: 3px solid rgb(245, 248, 244);
+            border-radius: 10px;
+        }
+        .main .img1 img:hover {
+            transform: scale(0.4);
+        }
+        .main .img2 img {
+            height: 200px;
+            width: 350px;
+            transition: 1s all ease;
+            border: 3px solid rgb(249, 250, 244);
+            border-radius: 10px;
+        }
+        .main .img2 img:hover {
+            transform: scaleX(0.4);
+        }
+        .main .img3 img {
+            height: 200px;
+            width: 200px;
+            transition: 1s all ease;
+            border: 3px solid rgb(241, 243, 237);
+            border-radius: 10px;
+        }
+        .main .img3 img:hover {
+            transform: scaleY(0.2);
+        }
+        .main .img4 img {
+            height: 200px;
+            width: 300px;
+            transition: 1s all ease;
+            border: 3px solid rgb(250, 249, 253);
+            border-radius: 10px;
+        }
+        .main .img4 img:hover {
+            transform: translateX(60px) translateY(80px) rotate(360deg);
+        }
+        .main .img5 img {
+            height: 200px;
+            width: 200px;
+            transition: 1s all ease;
+            border: 3px solid rgb(251, 250, 253);
+            border-radius: 10px;
+        }
+        .main .img5 img:hover {
+            transform: skew(60deg,20deg);
+        }
+        
+        .main .img6 img {
+            height: 180px;
+            width: 300px;
+            transition: 1s all ease-out;
+            border: 3px solid rgb(255, 252, 255);
+            border-radius: 10px;
+        }
+        .main .img6 img:hover {
+            transform: scaleY(-0.9);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img1">
+            <img src="b1.jpg">
+        </div>
+        <div class="img2">
+            <img src="b2.jpg">
+        </div>
+        <div class="img3">
+            <img src="b3 (1).jpg">
+        </div>
+        <div class="img4">
+            <img src="b4.jpg">
+        </div>
+        <div class="img5">
+            <img src="b5 (1).jpg">
+        </div>
+        <div class="img6">
+            <img src="b6 (1).jpg">
+        </div>
+    </div>
+</body>
+</html>
